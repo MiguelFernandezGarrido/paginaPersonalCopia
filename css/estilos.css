@@ -1,0 +1,384 @@
+/*global*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    /* background-color: black; */
+}
+
+/*Nav*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    clear: both;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+li.nav {
+    width: 24.5%;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Roboto Serif', serif;
+    margin-bottom: 20px;
+}
+
+li.nav a {
+    color: yellow;
+    font-size: 3em;
+}
+
+li.nav a:hover,
+footer a:hover {
+    background-color: rgba(0, 195, 255, 0.7);
+    border-radius: 10px;
+}
+
+/*enlaces que no estén en el nav*/
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: all .8s linear;
+}
+
+a:hover {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+/*Fin de Nav*/
+
+/*Separación*/
+hr {
+    width: 90%;
+    border: 1px solid #000;
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Botones de mostrar/ocultar*/
+.botonBonitoContacto,
+.botonBonitoCv,
+.botonBonitoIndex {
+    /*Tamaño*/
+    width: 200px;
+    height: 40px;
+    /*iconoemail como background a la izquierda*/
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-size: 30px;
+    background-color: #fff;
+    /*Borde redondeado y con sombra*/
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    /*Transicion*/
+    transition: all .5s linear;
+}
+
+.botonBonitoContacto:hover,
+.botonBonitoCv:hover,
+.botonBonitoIndex:hover {
+    cursor: pointer;
+    background-color: rgba(16, 195, 201, 0.788);
+    color: #fff;
+}
+
+/*Fin de botones*/
+
+/*inicio de footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+}
+
+footer div {
+    height: 100%;
+}
+
+footer ul {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+footer li {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    transition: all .5s ease;
+}
+
+footer img:hover {
+    transform: scale(1.6);
+}
+
+footer p {
+    position: absolute;
+    padding-right: 10px;
+    bottom: 0;
+    right: 0;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+footer a:hover {
+    background: none;
+}
+
+/*fin de footer*/
+/*fin de global*/
+
+/*inicio*/
+#Texto {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+    margin-top: 12%;
+}
+#Texto p{
+    font-size: 1.5em;
+    font-family: 'Roboto Serif', serif;
+    color: black;
+}
+
+#Squalo {
+    position: relative;
+    float: right;
+    width: 45%;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#aura {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    width: 1px;
+    height: 1px;
+    animation: rotarAura 1.25s linear infinite;
+}
+
+.rayo {
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: linear-gradient(black, rgb(230, 0, 0), white, rgb(161, 0, 0));
+    transform-origin: top left;
+    animation: alargarRayo 2.5s ease-in-out infinite;
+
+}
+
+@keyframes alargarRayo {
+    0% {
+        height: 100px;
+    }
+
+    50% {
+        height: 200px;
+    }
+
+    100% {
+        height: 100px;
+    }
+}
+
+@keyframes rotarAura {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#activarAnimacion {
+    position: relative;
+    top: 50px;
+}
+
+/*fin de inicio*/
+
+/*inicio de aptitudes*/
+article.aptitudes {
+    margin-top: 10%;
+    padding-bottom: 50px;
+}
+
+article.aptitudes ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+article.aptitudes>ul {
+    display: block;
+}
+
+article.aptitudes li {
+    line-height: 30px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+li.aptitudes li,
+li.aptitudes div {
+    display: inline;
+}
+
+article.aptitudes img {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+article.aptitudes p {
+    background-color: rgba(106, 105, 110, 0.356);
+    border-radius: 10px;
+}
+
+li.aptitudes {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+}
+
+/*fin de aptitudes*/
+
+/*inicio de contacto*/
+article.contacto {
+    margin-top: 10%;
+    margin-left: 10%;
+    float: left;
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    border: 0;
+    float: right;
+}
+
+article.contacto p {
+    font-size: 1.2em;
+    font-family: 'Roboto Serif', serif;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+article.contacto ul {
+    list-style: none;
+}
+
+article.contacto input {
+    text-align: left;
+    padding-left: 60px;
+}
+
+article.contacto a {
+    display: inline;
+}
+
+li:nth-child(1) input {
+    background-image: url('../imagenes/iconoemail.png');
+}
+
+li:nth-child(2) input {
+    background-image: url('../imagenes/iconotlf.png');
+}
+
+li:nth-child(3) input {
+    background-image: url('../imagenes/iconotwitter.png');
+}
+
+li:nth-child(4) input {
+    background-image: url('../imagenes/iconofacebook.png');
+}
+
+/*fin de contacto*/
+
+/*inicio de cv y github*/
+section.CvYGit {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+section.CvYGit article:nth-child(1) {
+    width: 45%;
+    float: left;
+}
+
+section.CvYGit article:nth-child(2) {
+    width: 45%;
+    position: relative;
+    float: right;
+}
+
+article.CvYGit {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+embed {
+    width: 100%;
+    height: 550px;
+    padding: auto;
+}
+
+section.CvYGit ul {
+    list-style: none;
+}
+
+section.CvYGit img {
+    width: 80%;
+    height: 700px;
+}
+
+article.CvYGit li {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    line-height: 80px;
+}
+
+/*fin de cv y github*/

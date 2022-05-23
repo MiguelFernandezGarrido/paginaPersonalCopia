@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Contacto</title>
+    <link rel="icon" href="imagenes/squalo.ico" type="image/x-icon">
+    <link rel='stylesheet' href='../css/estilos.css'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- elemento identificativo -->
+    <span id="contacto"></span>
+    <nav>
+        <ul>
+            <li class="nav"><a href='../index.html'>Inicio</a></li>
+            <li class="nav"><a href="CVyGithub.html">CV</a></li>
+            <li class="nav"><a href="aptitudes.html">Aptitudes</a></li>
+            <li class="nav"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <article class="contacto">
+        <h1>Mapa de mi localización</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4817.281682879877!2d-3.9015848572274052!3d37.77042038867971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd02378562523%3A0x6e91f1bee9415d01!2s23640%20Torredelcampo%2C%20Ja%C3%A9n!5e0!3m2!1sen!2ses!4v1652827891245!5m2!1sen!2ses"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+    <article class="contacto">
+        <h1>Contacto</h1>
+        <p>Si quieres contactar conmigo, puedes hacerlo a través de los siguientes medios:</p>
+        <ul>
+            <li>
+                <!-- Email, se puede copiar -->
+                <input type="submit" class="botonBonitoContacto" value="Mostrar Email">
+                <label class="labelContacto">Email</label>
+                <p class="pContacto">: <span class="spanCopiarContacto"
+                        id="correo">miguel.fernandez.2311@fernando3martos.com</span>
+                    <button class="copiarBoton" id="botonCorreo">Copiar correo</button>
+                </p>
+            </li>
+            <li>
+                <!-- Teléfono, se puede copiar -->
+                <input type="submit" class="botonBonitoContacto" value="Mostrar Teléfono">
+                <label class="labelContacto">Teléfono</label>
+                <p class="pContacto">: <span class="spanCopiarContacto" id="telefono">664-867-908</span>
+                    <button class="copiarBoton" id="botonTlf">Copiar teléfono</button>
+                </p>
+            </li>
+            <li>
+                <!-- Twitter, enlace a -->
+                <input type="submit" class="botonBonitoContacto" value="Mostrar Twitter">
+                <label class="labelContacto">Twitter</label>
+                <p class="pContacto" id="twitter">: <a href="https://twitter.com/Squalo364">@Squalo364</a></p>
+            </li>
+            <li>
+                <!-- Facebook, enlace a -->
+                <input type="submit" class="botonBonitoContacto" value="Mostrar Facebook">
+                <label class="labelContacto">Facebook</label>
+                <p class="pContacto" id="facebook">: <a
+                        href="https://www.facebook.com/miguelangel.fernandezgarrido.3">Miguel Ángel Fernández</a></p>
+            </li>
+        </ul>
+    </article>
+
+
+    <footer>
+        <!-- Redes sociales -->
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/miguelangel.fernandezgarrido.3">
+                        <img src="../imagenes/iconofacebook.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/Squalo364">
+                        <img src="../imagenes/iconotwitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com">
+                        <img src="../imagenes/iconoinstagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <p>Copyright © 2022 Miguel Ángel Fernández Garrido</p>
+    </footer>
+    <!-- El script -->
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
