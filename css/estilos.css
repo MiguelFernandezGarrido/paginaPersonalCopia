@@ -36,8 +36,12 @@ li.nav {
     text-align: center;
     line-height: 80px;
 }
-
-h1 {
+h1{
+    position: relative;
+    top: 100px;
+    left: 15%;
+}
+h2 {
     font-size: 2.5em;
     font-family: 'Roboto Serif', serif;
     margin-bottom: 20px;
@@ -188,7 +192,7 @@ footer a:hover {
     float: right;
     width: 45%;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 #aura {
